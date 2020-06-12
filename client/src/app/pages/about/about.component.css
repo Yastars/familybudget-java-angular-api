@@ -1,0 +1,28 @@
+h1 {
+    margin: 30px;
+}
+
+.background {
+    background-color: rgba(0, 166, 255, 0.2); 
+}
+
+
+.box{
+    height: 400px;
+    -webkit-box-shadow: 6px 4px 21px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 4px 21px 9px rgba(0,0,0,0.75);
+    box-shadow: 6px 4px 21px 9px rgba(0,0,0,0.75);
+}
+
+
+.qassar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 0.5px white solid;
+    margin: 40px auto;
+}
+
+.txt {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}

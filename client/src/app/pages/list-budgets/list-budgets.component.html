@@ -1,0 +1,26 @@
+<div class="container">
+
+<h1>List of Budgets</h1>
+
+<p>Find all the budgets that you need.</p>
+
+<button class="btn btn-primary mb-2" routerLink="/budgets/new">New Budget +</button>
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let budget of listBudgets">
+            <td>{{ budget.id }}</td>
+            <td>{{ budget.title }}</td>
+            <td>{{ budget.amount }}</td>
+            <td>{{ budget.category }}</td>
+            <td><button class="btn btn-danger" [routerLink]="'/budgets/' + budget.id + '/update' ">Update</button></td>
+        </tr>
+    </table>
+  </div>
+</div>
